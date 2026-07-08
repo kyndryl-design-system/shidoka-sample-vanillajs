@@ -1,0 +1,23 @@
+{
+  "name": "shidoka-sample-vanillajs",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --open",
+    "build": "vite build",
+    "lint": "eslint . --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@kyndryl-design-system/shidoka-applications": "^2.109.6",
+    "@kyndryl-design-system/shidoka-charts": "^2.10.2",
+    "@kyndryl-design-system/shidoka-foundation": "^2.8.17",
+    "@kyndryl-design-system/shidoka-icons": "^2.26.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.45.0",
+    "sass": "^1.69.5",
+    "vite": "^4.4.5"
+  }
+}

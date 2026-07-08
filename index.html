@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shidoka Vanilla JS Sample</title>
+    <meta name="color-scheme" content="light dark" />
+  </head>
+  <body>
+    <kyn-ui-shell>
+      <kyn-header divider app-title="Shidoka Vanilla JS">
+        <kyn-header-nav>
+          <kyn-header-link href="javascript:void(0)">
+            <span data-icon="circle"></span>
+            Link 1
+          </kyn-header-link>
+          <kyn-header-link href="javascript:void(0)" is-active>
+            <span data-icon="circle"></span>
+            Link 2
+          </kyn-header-link>
+          <kyn-header-link href="javascript:void(0)">
+            <span data-icon="circle"></span>
+            Link 3
+            <kyn-header-link slot="links" href="javascript:void(0)">
+              Sub Link 1
+            </kyn-header-link>
+            <kyn-header-link slot="links" href="javascript:void(0)">
+              Sub Link 2
+            </kyn-header-link>
+          </kyn-header-link>
+        </kyn-header-nav>
+
+        <kyn-header-flyouts>
+          <kyn-header-flyout assistive-text="Account">
+            <span slot="button" data-icon="user"></span>
+
+            <kyn-header-link href="javascript:void(0)">Login</kyn-header-link>
+            <kyn-header-link href="javascript:void(0)">Sign up</kyn-header-link>
+          </kyn-header-flyout>
+        </kyn-header-flyouts>
+      </kyn-header>
+
+      <kyn-local-nav>
+        <kyn-local-nav-link href="javascript:void(0)" active>
+          <span slot="icon" data-icon="circle"></span>
+          Link 1
+        </kyn-local-nav-link>
+
+        <kyn-local-nav-link href="javascript:void(0)">
+          <span slot="icon" data-icon="circle"></span>
+          Link 2
+          <kyn-local-nav-link slot="links" href="javascript:void(0)">
+            L2 Link 1
+          </kyn-local-nav-link>
+          <kyn-local-nav-link slot="links" href="javascript:void(0)">
+            L2 Link 2
+          </kyn-local-nav-link>
+        </kyn-local-nav-link>
+
+        <kyn-local-nav-link href="javascript:void(0)" expanded>
+          <span slot="icon" data-icon="circle"></span>
+          Link 3
+          <kyn-local-nav-link slot="links" href="javascript:void(0)">
+            L2 Link 1
+            <kyn-local-nav-link slot="links" href="javascript:void(0)">
+              L3 Link 1
+            </kyn-local-nav-link>
+            <kyn-local-nav-link slot="links" href="javascript:void(0)">
+              L3 Link 2
+            </kyn-local-nav-link>
+          </kyn-local-nav-link>
+        </kyn-local-nav-link>
+      </kyn-local-nav>
+
+      <main>
+        <div class="kd-grid">
+          <div class="kd-grid__col--sm-4 kd-grid__col--md-8 kd-grid__col--lg-12">
+            <kyn-page-title page-title="Shidoka Vanilla JS Sample App"></kyn-page-title>
+          </div>
+
+          <div class="kd-grid__col--sm-4 kd-grid__col--md-4 kd-grid__col--lg-8">
+            <kd-chart
+              id="bar-chart"
+              type="bar"
+              height="400"
+              chart-title="Bar Chart"
+              description="Description"
+            ></kd-chart>
+          </div>
+
+          <div class="kd-grid__col--sm-4 kd-grid__col--md-4 kd-grid__col--lg-4">
+            <kd-chart
+              id="doughnut-chart"
+              type="doughnut"
+              height="400"
+              chart-title="Doughnut Chart"
+              description="Description"
+            ></kd-chart>
+          </div>
+        </div>
+      </main>
+
+      <kyn-footer>
+        <span slot="copyright">
+          Copyright &copy; 2025 Kyndryl Inc. All rights reserved.
+        </span>
+      </kyn-footer>
+    </kyn-ui-shell>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
