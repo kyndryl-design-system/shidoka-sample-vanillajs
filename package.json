@@ -10,10 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@kyndryl-design-system/shidoka-applications": "^2.109.6",
-    "@kyndryl-design-system/shidoka-charts": "^2.10.2",
-    "@kyndryl-design-system/shidoka-foundation": "^2.8.17",
-    "@kyndryl-design-system/shidoka-icons": "^2.26.2"
+    "@kyndryl-design-system/shidoka-applications": "^2.120.4",
+    "@kyndryl-design-system/shidoka-charts": "^2.12.5",
+    "@kyndryl-design-system/shidoka-foundation": "^2.8.19",
+    "@kyndryl-design-system/shidoka-icons": "^2.28.1"
   },
   "devDependencies": {
     "eslint": "^8.45.0",
